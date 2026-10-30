@@ -3,11 +3,21 @@
     "step": {
       "user": {
         "title": "MiniMax Usage",
-        "description": "MiniMax Subscription-Key (sk-cp-...) for your Token Plan.",
+        "description": "MiniMax subscription key (sk-cp-...) for your token plan.",
         "data": {
           "api_key": "API key"
         }
-      },
+      }
+    },
+    "error": {
+      "invalid_key": "Key rejected or plan not visible. Use your subscription key (sk-cp-...)."
+    },
+    "abort": {
+      "already_configured": "MiniMax Usage is already configured."
+    }
+  },
+  "options": {
+    "step": {
       "init": {
         "title": "Configure MiniMax Usage",
         "description": "Change the API key.",
@@ -17,18 +27,40 @@
       }
     },
     "error": {
-      "invalid_key": "Key rejected or plan not visible. Use your Subscription key (sk-cp-...)."
+      "invalid_key": "Key rejected or plan not visible. Use your subscription key (sk-cp-...)."
+    }
+  },
+  "device": {
+    "general": {
+      "name": "MiniMax Token Plan — General"
     },
-    "abort": {
-      "already_configured": "MiniMax Usage is already configured."
+    "video": {
+      "name": "MiniMax Token Plan — Video"
     }
   },
   "entity": {
     "sensor": {
-      "used_5h": { "name": "5h usage" },
-      "resets_5h": { "name": "5h reset" },
-      "used_weekly": { "name": "Weekly usage" },
-      "resets_weekly": { "name": "Weekly reset" }
+      "used_5h": {
+        "name": "5h usage"
+      },
+      "resets_5h": {
+        "name": "5h reset"
+      },
+      "used_weekly": {
+        "name": "Weekly usage"
+      },
+      "resets_weekly": {
+        "name": "Weekly reset"
+      },
+      "delta_5h_1h": {
+        "name": "Δ 5h usage last hour"
+      },
+      "delta_5h_2h": {
+        "name": "Δ 5h usage last 2 hours"
+      },
+      "delta_weekly_1h": {
+        "name": "Δ weekly usage last hour"
+      }
     }
   }
 }

@@ -3,17 +3,8 @@
     "step": {
       "user": {
         "title": "MiniMax Usage",
-        "description": "MiniMax Subscription-Key (sk-cp-...) für den Token-Plan.",
-        "data": {
-          "api_key": "API-Key"
-        }
-      },
-      "init": {
-        "title": "MiniMax Usage konfigurieren",
-        "description": "API-Key ändern.",
-        "data": {
-          "api_key": "API-Key"
-        }
+        "description": "MiniMax-Subscription-Key (sk-cp-...) für den Token-Plan.",
+        "data": { "api_key": "API-Key" }
       }
     },
     "error": {
@@ -22,6 +13,22 @@
     "abort": {
       "already_configured": "MiniMax Usage ist bereits eingerichtet."
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "MiniMax Usage konfigurieren",
+        "description": "API-Key ändern.",
+        "data": { "api_key": "API-Key" }
+      }
+    },
+    "error": {
+      "invalid_key": "Schlüssel abgelehnt oder Plan nicht sichtbar. Subscription-Key (sk-cp-...) verwenden."
+    }
+  },
+  "device": {
+    "general": { "name": "MiniMax Token Plan — Allgemein" },
+    "video": { "name": "MiniMax Token Plan — Video" }
   },
   "entity": {
     "sensor": {

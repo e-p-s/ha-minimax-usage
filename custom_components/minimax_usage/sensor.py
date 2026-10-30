@@ -126,7 +126,7 @@ class MiniMaxUsageSensor(CoordinatorEntity[MiniMaxUsageCoordinator], SensorEntit
         label = MODEL_LABELS.get(model, model.capitalize())
         self._attr_device_info = {
             "identifiers": {(DOMAIN, entry.entry_id, model)},
-            "name": f"MiniMax Token Plan — {label}",
+            "translation_key": "general" if model == "general" else "video",
             "manufacturer": "MiniMax",
             "configuration_url": "https://platform.minimax.io/console/usage",
         }
@@ -184,7 +184,7 @@ class MiniMaxDeltaSensor(CoordinatorEntity[MiniMaxUsageCoordinator], SensorEntit
         self._attr_suggested_object_id = f"minimax_general_{kind}"
         self._attr_device_info = {
             "identifiers": {(DOMAIN, entry.entry_id, "general")},
-            "name": "MiniMax Token Plan — Allgemein",
+            "translation_key": "general",
             "manufacturer": "MiniMax",
             "configuration_url": "https://platform.minimax.io/console/usage",
         }

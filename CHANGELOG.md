@@ -1,3 +1,8 @@
+## v1.1.0 — 2026-10-30
+- Multilingual: full DE/EN translations via Home Assistant standard system
+- Device names now use `translation_key` + `device` translation section (was hardcoded German)
+- Options-flow (API key dialog) fully translated
+- Translations are preloaded during setup so device names resolve correctly on cold start
 # Changelog
 
 All notable changes to this project are documented in this file.

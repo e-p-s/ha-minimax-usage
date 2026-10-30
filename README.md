@@ -24,6 +24,8 @@ Polls `https://www.minimax.io/v1/token_plan/remains` every 60 s and creates:
 
 A second device **“— Video”** exposes the weekly sensors for the `video` model group. The misleading "5h" value the API returns for video (it is actually a 24 h window) is intentionally hidden.
 
+![MiniMax Usage — device page in Home Assistant](images/preview.png)
+
 ### How the delta sensors work
 
 Every poll is stored as a sample in a rolling 48 h history (`.storage/minimax_usage.samples`, private file). Deltas are computed from sample differences. When the time window resets between two samples, only the new value counts as increment — resets never produce phantom consumption. History starts empty; all windows are filled after ~1–2 h of polling.

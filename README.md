@@ -2,7 +2,11 @@
 
 Custom integration exposing your **MiniMax token plan** quota in Home Assistant — including rolling consumption deltas (last hour / last 2 hours).
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+[![GitHub Release](https://img.shields.io/github/release/e-p-s/ha-minimax-usage.svg)](https://github.com/e-p-s/ha-minimax-usage/releases)
+[![Validate with hassfest](https://github.com/e-p-s/ha-minimax-usage/actions/workflows/hassfest.yaml/badge.svg)](https://github.com/e-p-s/ha-minimax-usage/actions/workflows/hassfest.yaml)
+[![HACS Validation](https://github.com/e-p-s/ha-minimax-usage/actions/workflows/validate.yaml/badge.svg)](https://github.com/e-p-s/ha-minimax-usage/actions/workflows/validate.yaml)
+[![License: MIT](https://img.shields.io/github/license/e-p-s/ha-minimax-usage.svg)](LICENSE)
 ![hassfest](https://github.com/e-p-s/ha-minimax-usage/actions/workflows/hassfest.yaml/badge.svg)
 
 ## What it does
@@ -31,6 +35,15 @@ Every poll is stored as a sample in a rolling 48 h history (`.storage/minimax_us
 - A subscription API key from [platform.minimax.io](https://platform.minimax.io)
 
 ## Installation
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=minimax_usage)
+
+*Requires the integration to be installed first (HACS or manual).*
+
+### HACS (custom repository)
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=e-p-s&repository=ha-minimax-usage&category=integration)
+
 
 ### HACS (custom repository)
 

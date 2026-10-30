@@ -5,6 +5,7 @@ import logging
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
+from homeassistant.config_validation import empty_config_schema
 from homeassistant.core import HomeAssistant
 
 from .const import CONF_API_KEY, DOMAIN
@@ -15,6 +16,9 @@ PLATFORMS: list[Platform] = [Platform.SENSOR]
 _LOGGER = logging.getLogger(__name__)
 
 type MiniMaxUsageConfigEntry = ConfigEntry[MiniMaxUsageCoordinator]
+
+
+CONFIG_SCHEMA = empty_config_schema(DOMAIN)
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:

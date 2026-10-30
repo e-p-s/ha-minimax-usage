@@ -1,0 +1,14 @@
+{
+  "domain": "minimax_usage",
+  "name": "MiniMax Usage",
+  "codeowners": [
+    "@e-p-s"
+  ],
+  "config_flow": true,
+  "documentation": "https://platform.minimax.io/docs/m-plan/usage-rules",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "1.0.0",
+  "issue_tracker": "https://github.com/e-p-s/ha-minimax-usage/issues"
+}

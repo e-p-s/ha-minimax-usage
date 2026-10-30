@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a bug with the integration
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before opening an issue, please search existing issues (including closed ones) to avoid duplicates.**
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: input
+    id: ha-version
+    attributes:
+      label: Home Assistant version
+      description: "Settings > About > Core version"
+      placeholder: "2026.10.4"
+    validations:
+      required: true
+  - type: input
+    id: integration-version
+    attributes:
+      label: Integration version
+      description: "Settings > Devices & Services > Integration > Information (or HACS)"
+      placeholder: "1.0.0"
+    validations:
+      required: true

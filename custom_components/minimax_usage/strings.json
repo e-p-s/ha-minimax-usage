@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MiniMax Usage",
+        "description": "MiniMax Subscription-Key (sk-cp-...) for your Token Plan.",
+        "data": {
+          "api_key": "API key"
+        }
+      },
+      "init": {
+        "title": "Configure MiniMax Usage",
+        "description": "Change the API key.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_key": "Key rejected or plan not visible. Use your Subscription key (sk-cp-...)."
+    },
+    "abort": {
+      "already_configured": "MiniMax Usage is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "used_5h": { "name": "5h usage" },
+      "resets_5h": { "name": "5h reset" },
+      "used_weekly": { "name": "Weekly usage" },
+      "resets_weekly": { "name": "Weekly reset" }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MiniMax Usage",
+        "description": "MiniMax Subscription-Key (sk-cp-...) für den Token-Plan.",
+        "data": {
+          "api_key": "API-Key"
+        }
+      },
+      "init": {
+        "title": "MiniMax Usage konfigurieren",
+        "description": "API-Key ändern.",
+        "data": {
+          "api_key": "API-Key"
+        }
+      }
+    },
+    "error": {
+      "invalid_key": "Schlüssel abgelehnt oder Plan nicht sichtbar. Subscription-Key (sk-cp-...) verwenden."
+    },
+    "abort": {
+      "already_configured": "MiniMax Usage ist bereits eingerichtet."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "used_5h": { "name": "5h-Nutzung" },
+      "resets_5h": { "name": "5h-Reset" },
+      "used_weekly": { "name": "Wochen-Nutzung" },
+      "resets_weekly": { "name": "Wochen-Reset" },
+      "delta_5h_1h": { "name": "Δ 5h-Nutzung letzte Stunde" },
+      "delta_5h_2h": { "name": "Δ 5h-Nutzung letzte 2 Std." },
+      "delta_weekly_1h": { "name": "Δ Wochen-Nutzung letzte Stunde" }
+    }
+  }
+}
